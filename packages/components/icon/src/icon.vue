@@ -1,5 +1,5 @@
 <template>
-  <i :class="ns.b()" :style="style" v-bind="$attrs">
+  <i :style="style" v-bind="$attrs">
     <slot />
   </i>
 </template>
@@ -9,7 +9,9 @@
 import { computed } from 'vue'
 import { iconProps } from './icon'
 import type { CSSProperties } from 'vue'
-
+import { isUndefined } from '../../../utils/types'
+import { addUnit } from '../../../utils/vue/style';
+const props = defineProps(iconProps)
 
 const style = computed<CSSProperties>(() => {
   if (!props.size && !props.color) return {}

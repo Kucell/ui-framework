@@ -1,9 +1,11 @@
 <script setup lang="ts">
-
+const msg = "this is mas";
+const person = {
+  name,
+};
 </script>
 
 <template>
-
   <p>hhhhh</p>
 </template>
 

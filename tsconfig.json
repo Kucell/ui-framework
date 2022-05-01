@@ -9,7 +9,9 @@
     "sourceMap": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "lib": ["esnext", "dom"]
+    "lib": ["esnext", "dom"],
+    "skipLibCheck": true,
+    "types":["vite/client"]
   },
   "include": ["play/**/*.ts", "play/**/*.d.ts", "play/**/*.tsx", "play/**/*.vue"],
   "references": [{ "path": "./tsconfig.node.json" }]

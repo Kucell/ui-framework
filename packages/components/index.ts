@@ -3,6 +3,9 @@ import type { App } from "vue";
 import BIcon from "./icon";
 
 const components = [BIcon];
+const a = {
+  a: "ds",
+};
 
 const install = (app: App) => {
   // 注册组件
